@@ -44,5 +44,4 @@ class TWUsa extends \Peak\MicroService\Core {
 		];
 	}
 
-
 }
