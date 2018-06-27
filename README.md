@@ -39,7 +39,7 @@ class ECShop extends \Peak\MicroService\Core {
 	<li>方法都是 <b>protected static</b> 类型的方法；</li>
 	<li>参数是和外部调用时约定的输入参数；</li>
 	<li>返回值即是向响应应用提交的参数，必须是数组；</li>
-	<li>路由和方法名相关，例如域名是<u>http://domain/api/</u>，那么使用该方法的路由就是 <u>http://domain/api/getOrderDetail </u>。</li>
+	<li>路由和方法名相关，例如域名是 <i>http://domain/api/</i>，那么使用该方法的路由就是 <i>http://domain/api/getOrderDetail </i>。</li>
 </ul>
 	
 
