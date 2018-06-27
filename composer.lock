@@ -1,0 +1,203 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "7318d53d87dea26504427c0d61e75632",
+    "packages": [
+        {
+            "name": "9peak/micro-service",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/9PEAK/PHP-MicroService.git",
+                "reference": "ef87d527c83c36d5b3a163482b106e750c78fe51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/9PEAK/PHP-MicroService/zipball/ef87d527c83c36d5b3a163482b106e750c78fe51",
+                "reference": "ef87d527c83c36d5b3a163482b106e750c78fe51",
+                "shasum": ""
+            },
+            "require": {
+                "9peak/php-token": "dev-master",
+                "9peak/php-tool": "dev-master",
+                "php": ">= 5.4",
+                "php-curl-class/php-curl-class": "^7.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Peak\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kane Young / 杨祥凯",
+                    "email": "52653784@qq.com"
+                }
+            ],
+            "description": "Mirco Service Framework for PHP Application.",
+            "keywords": [
+                "9peak",
+                "micro service",
+                "微服务"
+            ],
+            "time": "2018-06-27T01:02:17+00:00"
+        },
+        {
+            "name": "9peak/php-token",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/9PEAK/PHP-Token.git",
+                "reference": "5e74e6dbb97fadc0a005bd1c13aa74e03a79ba1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/9PEAK/PHP-Token/zipball/5e74e6dbb97fadc0a005bd1c13aa74e03a79ba1e",
+                "reference": "5e74e6dbb97fadc0a005bd1c13aa74e03a79ba1e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Peak\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kane Young / 杨祥凯",
+                    "email": "52653784@qq.com"
+                }
+            ],
+            "description": "Token for PHP . / PHP程序：加密计算数组序列Token。",
+            "keywords": [
+                "PHP token"
+            ],
+            "time": "2018-06-15T03:42:35+00:00"
+        },
+        {
+            "name": "9peak/php-tool",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/9PEAK/PHP-Tool.git",
+                "reference": "08dfdef6a070cf461e6eaeedb2c1326ec12a2a12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/9PEAK/PHP-Tool/zipball/08dfdef6a070cf461e6eaeedb2c1326ec12a2a12",
+                "reference": "08dfdef6a070cf461e6eaeedb2c1326ec12a2a12",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Peak\\Tool\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kane Young / 杨祥凯",
+                    "email": "52653784@qq.com"
+                }
+            ],
+            "description": "PHP-Tool integration.",
+            "keywords": [
+                "9peak",
+                "php",
+                "php tool"
+            ],
+            "time": "2018-06-26T08:44:33+00:00"
+        },
+        {
+            "name": "php-curl-class/php-curl-class",
+            "version": "7.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-curl-class/php-curl-class.git",
+                "reference": "c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f",
+                "reference": "c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Curl\\": "src/Curl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Zach Borboa"
+                }
+            ],
+            "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs.",
+            "homepage": "https://github.com/php-curl-class/php-curl-class",
+            "keywords": [
+                "api",
+                "class",
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "json",
+                "php",
+                "requests",
+                "rest",
+                "restful",
+                "web service",
+                "xml"
+            ],
+            "time": "2017-09-04T21:38:09+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "9peak/micro-service": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">= 5.4"
+    },
+    "platform-dev": []
+}
