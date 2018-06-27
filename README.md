@@ -33,25 +33,15 @@ class ECShop extends \Peak\MicroService\Core {
 
 #### 规范
 9Peak/MicroService封装了请求和返回值的处理，因此开发人员无需关注这些，编写代码时只需要专注请求的路由和参数——之前强调过集成的都是请求业务。
-<ul> 
+<br>以上述代码为例，规范如下：
+<ul>
+	<li>所有类必须继承 <b>\Peak\MicroService\Core</b></li>
 	<li>方法都是 <b>protected static</b> 类型的方法；</li>
 	<li>参数是和外部调用时约定的输入参数；</li>
 	<li>返回值即是向响应应用提交的参数，必须是数组；</li>
-	<li>路由和方法名相关，例如域名是<i>http://domain/api/</i>，那么使用该方法的路由就是 <i>http://domain/api/getOrderDetail </i>。</li>
+	<li>路由和方法名相关，例如域名是<u>http://domain/api/</u>，那么使用该方法的路由就是 <u>http://domain/api/getOrderDetail </u>。</li>
 </ul>
 	
-```php
-class ECShop extends \Peak\MicroService\Core {
-	
-	protected static function getOrderDetail(array $param) {
-		return [
-			'order_id' => $param['order_id'],
-		];
-	}
-
-}
-
-```
 
 
 
