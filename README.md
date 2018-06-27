@@ -12,11 +12,19 @@
 
 集成文件封装了应用间交互时的请求业务——强调一下，是请求业务，以供服务内所有应用复用。
 <br> 例如，有多个应用需要查看电商的订单详情，那么在ECShop中就应该有对应的方法
-> // ECShop.php 文件
-<code> class ECShop { <br>
->
-> 
-  </code>
+```php
+function getAmazonOrders() {
+    $amz = new AmazonOrderList("myStore"); //store name matches the array key in the config file
+    $amz->setLimits('Modified', "- 24 hours");
+    $amz->setFulfillmentChannelFilter("MFN"); //no Amazon-fulfilled orders
+    $amz->setOrderStatusFilter(
+        array("Unshipped", "PartiallyShipped", "Canceled", "Unfulfillable")
+        ); //no shipped or pending
+    $amz->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
+    $amz->fetchOrders();
+    return $amz->getList();
+}
+```
 
 #### 依赖
 该库依赖并继承 9Peak/MicroService仓库 （https://github.com/9PEAK/PHP-MicroService）
