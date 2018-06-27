@@ -7,7 +7,7 @@
 ##### 核心文件
 所有的核心文件都必须放置在“src/MicroService/Integration/”目录之下，一个应用对应一个文件。
 例如，在微服务中存在两个服务（或者称之为应用）：论坛和商城。那么对应建立的文件应该是
-> src/MicroService/Integration/BBS.php
+> src/MicroService/Integration/BBS.php <br>
 > src/MicroService/Integration/EC
 
 ##### 依赖
