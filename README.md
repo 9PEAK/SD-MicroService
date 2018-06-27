@@ -13,6 +13,7 @@
 例如，在微服务中存在两个服务（或者称之为应用）：论坛和商城。那么对应建立的文件应该是
 > src/MicroService/Integration/BBS.php <br>
 > src/MicroService/Integration/ECShop.php
+
 需要额外提醒的是，如果某些接口在全系统中如果仅被一个应用使用，是无需编写入集成包的，只需要在项目中编写即可。
 
 #### 封装
