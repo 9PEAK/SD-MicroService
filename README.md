@@ -33,7 +33,11 @@ class ECShop extends \Peak\MicroService\Core {
 
 #### 规范
 9Peak/MicroService封装了请求和返回值的处理，因此开发人员无需关注这些，编写代码时只需要专注请求的路由和参数——之前强调过集成的都是请求业务。
-<br> 方法都是 <pre>protected static</pre> 类型的方法
+<ul> 
+	<li>方法都是 <b>protected static</b> 类型的方法。
+		<li>sdfsdf
+	</ul>
+	
 ```php
 class ECShop extends \Peak\MicroService\Core {
 	
