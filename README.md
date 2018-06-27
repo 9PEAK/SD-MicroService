@@ -1,8 +1,9 @@
 # SD-MicroService
 
 该仓库为SD的微服务框架，仅限SD项目使用。
-#### 安装
-> composer require 9peak/sd-integration
+#### 安装&删除
+> composer require 9peak/sd-integration <br>
+> composer remove vendor/sd-integration
 
 #### 依赖
 该库依赖并继承 9Peak/MicroService仓库 （https://github.com/9PEAK/PHP-MicroService）
@@ -13,7 +14,7 @@
 例如，在微服务中存在两个服务（或者称之为应用）：论坛和商城。那么对应建立的文件应该是
 > src/MicroService/Integration/BBS.php <br>
 > src/MicroService/Integration/ECShop.php
-
+需要额外提醒的是，如果某些接口在全系统中如果仅被一个应用使用，是无需编写入集成包的，只需要在项目中编写即可。
 
 #### 封装
 集成文件封装了应用间交互时的请求业务——强调一下，是请求业务——以供服务内所有应用复用。
@@ -83,4 +84,4 @@ if ($res ) {
 }
 ```
 
-需要额外提醒的是，如果某些接口在全系统中如果仅被一个应用使用，是无需编写入集成包的，只需要在项目中编写即可。
+
