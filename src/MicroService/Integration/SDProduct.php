@@ -19,4 +19,17 @@ class SDProduct extends \Peak\MicroService\Core {
 		];
 	}
 
+
+
+
+
+	// 用户模块
+	protected static function pwdGetUser (array $param /*, $query=null, $method='post'*/)
+	{
+		return @[
+			'account' => $param['account'],
+			'pwd' => $param['pwd'],
+		];
+	}
+
 }
