@@ -22,7 +22,6 @@ class IOCProvider extends Illuminate\Support\ServiceProvider{
 
 
 
-
 	}
 
 }
