@@ -1,10 +1,16 @@
 <?php
 namespace Peak\MicroService\Integration;
 
-class IOCProvider extends Illuminate\Support\ServiceProvider{
+class ServiceProvider extends Illuminate\Support\ServiceProvider{
 
 
 	public function register ()
+	{
+		$this->sdProduct();
+	}
+
+
+	private function sdProduct()
 	{
 		$this->app->singleton('Peak\MicroService\Integration\SDProduct', function (){
 			return new \Peak\MicroService\Integration\SDProduct(
@@ -19,9 +25,7 @@ class IOCProvider extends Illuminate\Support\ServiceProvider{
 				]
 			);
 		});
-
-
-
 	}
+
 
 }
