@@ -1,7 +1,7 @@
 <?php
 namespace Peak\MicroService\Integration;
 
-class ServiceProvider extends Illuminate\Support\ServiceProvider{
+class ServiceProvider extends \Illuminate\Support\ServiceProvider{
 
 
 	public function register ()
