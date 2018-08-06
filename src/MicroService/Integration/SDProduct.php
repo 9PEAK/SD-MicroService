@@ -32,4 +32,12 @@ class SDProduct extends \Peak\MicroService\Core {
 		];
 	}
 
+
+    protected static $createPlan = 'purchase/createPlan';
+    // 采购plan
+    protected static function createPlan (array $param)
+    {
+        return $param;
+    }
+
 }
