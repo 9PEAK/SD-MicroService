@@ -24,9 +24,7 @@ class SDProduct extends \Peak\MicroService\Core {
     protected  static $createProduct = 'product/create';
     protected static function createProduct (array $param /*, $query=null, $method='post'*/)
     {
-        return [
-            'product' => $param
-        ];
+        return $param;
     }
 
 
