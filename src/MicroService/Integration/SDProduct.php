@@ -45,4 +45,30 @@ class SDProduct extends \Peak\MicroService\Core {
         return $param;
     }
 
+
+    //shipment
+    protected static $saveShipment = 'fbaSales/saveShipment';
+
+    protected static function saveShipment (array $param)
+    {
+        return [
+            'date' => $param['date'],
+            'dat' => $param['dat'],
+            'ecNo' => $param['ecNo'],
+        ];
+    }
+
+
+    //refund
+    protected static $saveRefund = 'fbaSales/saveRefund';
+
+    protected static function saveRefund (array $param)
+    {
+        return [
+            'date' => $param['date'],
+            'dat' => $param['dat'],
+            'ecNo' => $param['ecNo'],
+        ];
+    }
+
 }
