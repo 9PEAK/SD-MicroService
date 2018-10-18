@@ -75,11 +75,7 @@ class SDProduct extends \Peak\MicroService\Core {
     //search user
     protected static function searchUser (array $param)
     {
-        return [
-            'date' => $param['date'],
-            'dat' => $param['dat'],
-            'ecNo' => $param['ecNo'],
-        ];
+        return $param;
     }
 
 }
