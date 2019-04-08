@@ -55,7 +55,4 @@ class Product extends \Peak\MicroService\Core
 
 
 
-
-
-
 }
