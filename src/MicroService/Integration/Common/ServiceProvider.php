@@ -2,6 +2,7 @@
 
 namespace Peak\MicroService\Integration\Common;
 
+use Peak\MicroService\Auth\Token;
 use Peak\MicroService\Integration as DIR;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
