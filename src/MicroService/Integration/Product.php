@@ -34,7 +34,7 @@ class Product extends \Peak\MicroService\Core
 		$mfn && $param['mfn']=$mfn;
 
 		return $this->handle(
-			self::API_URL.'product/search',
+			'search',
 			$param
 		);
 	}
