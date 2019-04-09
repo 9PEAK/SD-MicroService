@@ -6,7 +6,7 @@ class Product extends \Peak\MicroService\Core
 
 	use Common\Handle;
 
-	const API_URL = 'http://sd-laravel/ms/product/';
+	const API_URL = 'http://sd.9peak.net/ms/product/';
 
 	/**
 	 * 获取商品明细

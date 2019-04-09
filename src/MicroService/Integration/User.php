@@ -4,6 +4,8 @@ namespace Peak\MicroService\Integration;
 class User extends \Peak\MicroService\Core
 {
 
+	use Common\Handle;
+
 
 	protected static function login (array $param /*, $query=null, $method='post'*/)
 	{
