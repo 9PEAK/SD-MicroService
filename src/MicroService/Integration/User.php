@@ -6,23 +6,15 @@ class User extends \Peak\MicroService\Core
 
 	use Common\Handle;
 
-
-	protected static function login (array $param /*, $query=null, $method='post'*/)
+	public function login ($account, $pwd)
 	{
-		return @[
-			'account' => $param['account'],
-			'pwd' => $param['pwd'],
-		];
+		return $this->handle(
+			'guest/login',
+			[
+				'account' => $account,
+				'pwd' => $pwd,
+			]
+		);
 	}
-
-
-
-	//search user
-	protected static function search (array $param)
-	{
-		return $param;
-	}
-
-
 
 }
