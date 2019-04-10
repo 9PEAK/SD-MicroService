@@ -17,13 +17,18 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
 	protected function sdMsProduct ()
 	{
-		$this->app->singleton(DIR\Product::class, function (){
-			return new DIR\Product(
-				new Token([
-					'id' => 'sd-product',
-					'key' => config('services.sd.sd-product'),
-				])
-			);
+		$token = new Token([
+			'id' => 'sd-product',
+			'key' => config('services.sd.sd-product'),
+		]);
+
+
+		$this->app->singleton(DIR\Product::class, function () use ($token){
+			return new DIR\Product($token);
+		});
+
+		$this->app->singleton(DIR\User::class, function () use ($token){
+			return new DIR\User($token);
 		});
 	}
 
