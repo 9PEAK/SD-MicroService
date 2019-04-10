@@ -23,11 +23,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 		]);
 
 
-		$this->app->singleton(DIR\Product::class, function () use ($token){
+		$this->app->singleton(DIR\Product::class, function () use (&$token){
 			return new DIR\Product($token);
 		});
 
-		$this->app->singleton(DIR\User::class, function () use ($token){
+		$this->app->singleton(DIR\User::class, function () use (&$token){
 			return new DIR\User($token);
 		});
 	}
