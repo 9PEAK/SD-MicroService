@@ -1,14 +1,14 @@
 <?php
 namespace Peak\MicroService\Integration;
 
-class User extends \Peak\MicroService\Core
+class Central extends \Peak\MicroService\Core
 {
 
 	use Common\Handle;
 
 	const API_URL = 'http://sd.9peak.net/ms/';
 
-	public function login ($account, $pwd)
+	public function guestLogin ($account, $pwd)
 	{
 		return $this->handle(
 			'guest/login',
