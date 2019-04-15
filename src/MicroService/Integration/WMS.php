@@ -11,7 +11,7 @@ class WMS extends \Peak\MicroService\Core
 	public function lsWarehouse ()
 	{
         return $this->handle(
-            'warehouse/ls',
+            'warehouse',
             [],
             'get'
         );

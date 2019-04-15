@@ -26,6 +26,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 		});
 	}
 
+
+
 	protected function sdMsProduct ()
 	{
 		$token = new Token([
