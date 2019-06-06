@@ -18,7 +18,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
 	public function sdMsWms ()
 	{
-		$this->app->singleton(DIR\WMS::class, function () use (&$token){
+		app()->singleton(DIR\WMS::class, function () {
 			return new DIR\WMS(new Token([
 				'id' => 'sd-wms',
 				'key' => config('services.sd.sd-wms'),
@@ -36,11 +36,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 		]);
 
 
-		$this->app->singleton(DIR\Product::class, function () use (&$token){
+		app()->singleton(DIR\Product::class, function () use (&$token){
 			return new DIR\Product($token);
 		});
 
-		$this->app->singleton(DIR\Central::class, function () use (&$token){
+		app()->singleton(DIR\Central::class, function () use (&$token){
 			return new DIR\Central($token);
 		});
 
